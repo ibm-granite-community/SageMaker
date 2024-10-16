@@ -1,3 +1,4 @@
 {
-    
+    "generated_text": "Python:\nfrom math import *\n\ndef countAPs(S, D):\n    S = S * 2\n    answer = 0\n    for i in range(1, int(sqrt(S)) + 1):\n        if (S % i == 0):\n            if (((S / i) - D * i + D) % 2 == 0):\n                answer += 1\n            if ((D * i - (S / i) + D) % 2 == 0):\n                answer += 1\n    return answer\n\nif __name__ == '__main__':\n    S = 12\n    D = 1\n    print(countAPs(S, D))\n"
 }
+  
