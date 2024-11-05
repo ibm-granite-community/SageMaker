@@ -1,0 +1,13 @@
+{
+    "inputs": "\nQuestion:\nTranslate the following code from C++ to Python.\nC++:\n#include \"bits/stdc++.h\"\nusing namespace std;\nbool isPerfectSquare(long double x) {\n  long double sr = sqrt(x);\n  return ((sr - floor(sr)) == 0);\n}\nvoid checkSunnyNumber(int N) {\n  if (isPerfectSquare(N + 1)) {\n    cout << \"Yes\\n\";\n  } else {\n    cout << \"No\\n\";\n  }\n}\nint main() {\n  int N = 8;\n  checkSunnyNumber(N);\n  return 0;\n}\n\nAnswer:\nPython:\nfrom math import *\n \ndef isPerfectSquare(x):\n    sr = sqrt(x)\n    return ((sr - floor(sr)) == 0)\n \ndef checkSunnyNumber(N):\n    if isPerfectSquare(N + 1):\n        print(\"Yes\")\n    else:\n        print(\"No\")\n \nif __name__ == '__main__':\n    N = 8\n    checkSunnyNumber(N)\n\n<end of code>\n\nQuestion:\nTranslate the following code from C++ to Python.\nC++:\n#include <bits/stdc++.h>\nusing namespace std;\nint countAPs(int S, int D) {\n  S = S * 2;\n  int answer = 0;\n  for (int i = 1; i <= sqrt(S); i++) {\n    if (S % i == 0) {\n      if (((S / i) - D * i + D) % 2 == 0)\n        answer++;\n      if ((D * i - (S / i) + D) % 2 == 0)\n        answer++;\n    }\n  }\n  return answer;\n}\nint main() {\n  int S = 12, D = 1;\n  cout << countAPs(S, D);\n  return 0;\n}\n\nAnswer:\n",
+    "parameters": {
+      "do_sample": true,
+      "top_p": 0.6,
+      "temperature": 0.1,
+      "top_k": 50,
+      "max_new_tokens": 1000,
+      "repetition_penalty": 1.03,
+      "stop": ["<end of code>"]
+    }
+}
+  

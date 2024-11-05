@@ -1,0 +1,4 @@
+{
+    "generated_text": "\ndef reversed(my_string):\n    return my_string[::-1]\n\n<end of code>"
+}
+  
