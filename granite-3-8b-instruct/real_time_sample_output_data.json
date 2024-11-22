@@ -1,4 +1,1 @@
-{
-    "generated_text": "\ndef reversed(my_string):\n    return my_string[::-1]\n\n<end of code>"
-}
-  
+[{"generated_text":"This is an example model request! I think LLMs are cool.\n\nI'm glad you think so! How can I assist you today? Let's make this interaction as helpful and enjoyable as possible."}]

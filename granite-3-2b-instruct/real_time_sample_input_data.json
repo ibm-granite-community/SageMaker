@@ -1,13 +1,12 @@
 {
-    "inputs": "Using the directions below, generate Python code for the specified task.\n\nQuestion:\n# Write a Python function that prints 'Hello World!' string 'n' times.\n\nAnswer:\ndef print_n_times(n):\n    for i in range(n):\n        print(\"Hello World!\")\n\n<end of code>\n\nQuestion:\n# Write a Python function that reverses the order of letters in a string.\n# The function named 'reversed' takes the argument 'my_string', which is a string. It returns the string in reverse order.\n\nAnswer:",
+    "inputs": "This is an example model request! I think LLMs are cool.",
     "parameters": {
-      "do_sample": true,
-      "top_p": 0.6,
-      "temperature": 0.1,
-      "top_k": 50,
-      "max_new_tokens": 1000,
-      "repetition_penalty": 1.03,
-      "stop": ["<end of code>"]
+        "do_sample": True,
+        "top_p": 0.6,
+        "temperature": 0.1,
+        "top_k": 50,
+        "max_new_tokens": 1000,
+        "repetition_penalty": 1.03
     }
   }
   
