@@ -1,3 +1,3 @@
 {
-    "generated_text": "def reversed(my_string):\n    return my_string[::-1]\n"
-  }
+  "generated_text": "def reversed(my_string):\n    return my_string[::-1]\n"
+}

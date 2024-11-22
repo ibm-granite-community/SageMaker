@@ -7,6 +7,8 @@
     "top_k": 50,
     "max_new_tokens": 1000,
     "repetition_penalty": 1.03,
-    "stop": ["<end of code>"]
+    "stop": [
+      "<end of code>"
+    ]
   }
 }
