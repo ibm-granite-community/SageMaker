@@ -1,11 +1,12 @@
 {
-    "inputs": "This is an example model request! I think LLMs are cool.",
+    "inputs": "A farmer has 10 cows, 5 chickens, and 2 horses. If we count all the animals' legs together, how many legs are there in total?",
     "parameters": {
         "do_sample": true,
-        "top_p": 0.6,
-        "temperature": 0.1,
+        "top_p": 0.9,
+        "temperature": 0.5,
         "top_k": 50,
-        "max_new_tokens": 1000,
-        "repetition_penalty": 1.03
+        "max_new_tokens": 2048,
+        "repetition_penalty": 1.00,
+        "thinking": true
     }
 }
