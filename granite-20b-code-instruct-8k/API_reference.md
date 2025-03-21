@@ -3,7 +3,7 @@ The fields you can use to run this model with an API. If you don't give a value 
 
 | Command | Type|	Default value | Description |
 | --- | --- | --- | --- |
-| `prompt` | string | | Prompt
+| `inputs` | string | | Prompt
 | `system_prompt` | String | 	You are a helpful assistant. | System prompt to send to the model. This is prepended to the prompt and helps guide system behavior. Ignored for non-chat models.
 | `min_tokens` | integer | 0 | The minimum number of tokens the model should generate as output.
 | `max_tokens` | integer | 512 | The maximum number of tokens the model should generate as output.
@@ -15,4 +15,6 @@ The fields you can use to run this model with an API. If you don't give a value 
 | `stop_sequences` | string |  | A comma-separated list of sequences to stop generation at. For example, '<end>,<stop>' will stop generation at the first instance of 'end' or '<stop>'.
 | `prompt_template` | string |  | A template to format the prompt with. If not provided, the default prompt template will be used.
 | `seed` | integer |  | Random seed. Leave blank to randomize the seed.
-
+|`return_dict_in_generate`| boolean | Returns a dictionary with keys like sequences, scores, attentions
+|`return_full_text`| boolean | The return_full_text parameter controls whether the entire prompt (user input + model response) is included in the output or only the generated response 
+|`output_scores`| boolean| The output_scores parameter, when set to True, returns token-level probabilities or confidence scores for the generated output
