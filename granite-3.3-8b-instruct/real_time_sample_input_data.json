@@ -1,0 +1,7 @@
+{
+    "inputs": "Fill in the missing part:\nOnce upon a time in a distant kingdom, <FILL_ME> and then the dragon was defeated.",
+    "parameters": {
+      "temperature": 0.9,
+      "max_new_tokens": 150
+    }
+  }
