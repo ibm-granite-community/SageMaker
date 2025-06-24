@@ -1,0 +1,21 @@
+{
+    "id": "chatcmpl-140643146253008",
+    "object": "chat.completion",
+    "created": 1742912311,
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "80,70,50,85,80"
+            },
+            "logprobs": null,
+            "finish_reason": "eos_token"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1787,
+        "completion_tokens": 15,
+        "total_tokens": 1802
+    }
+}
