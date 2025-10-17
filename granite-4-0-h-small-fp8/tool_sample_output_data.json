@@ -1,0 +1,45 @@
+{
+    "id": "chatcmpl-91f338503a3a490f80367a12b59f2680",
+    "object": "chat.completion",
+    "created": 1760694322,
+    "model": "lmi",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "",
+                "refusal": null,
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "tool_calls": [
+                    {
+                        "id": "chatcmpl-tool-efac8a455b3e4e09a493092d5239ecca",
+                        "type": "function",
+                        "function": {
+                            "name": "get_current_weather",
+                            "arguments": "{\n  \"city\": \"Dallas\",\n  \"state\": \"TX\",\n  \"unit\": \"fahrenheit\"\n}"
+                        }
+                    }
+                ],
+                "reasoning_content": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null
+        }
+    ],
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+        "prompt_tokens": 327,
+        "total_tokens": 352,
+        "completion_tokens": 25,
+        "prompt_tokens_details": null
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "kv_transfer_params": null
+}
