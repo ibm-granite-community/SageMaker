@@ -1,0 +1,30 @@
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": "Weather in Boston?"
+        }
+    ],
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_current_weather",
+                "description": "Get weather",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "city"
+                    ]
+                }
+            }
+        }
+    ],
+    "tool_choice": "auto",
+    "max_tokens": 2048
+}

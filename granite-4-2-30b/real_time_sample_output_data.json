@@ -1,0 +1,42 @@
+{
+    "id": "chatcmpl-af0bf94bb06e1f78",
+    "object": "chat.completion",
+    "created": 1794396042,
+    "model": "/opt/ml/model",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Let's calculate the total number of legs step by step:\n\n1. **Cows**:  \n   Each cow has 4 legs.  \n   There are 10 cows.  \n   So, cows' legs = $10 \\times 4 = 40$ legs.\n\n2. **Chickens**:  \n   Each chicken has 2 legs.  \n   There are 5 chickens.  \n   So, chickens' legs = $5 \\times 2 = 10$ legs.\n\n3. **Horses**:  \n   Each horse has 4 legs.  \n   There are 2 horses.  \n   So, horses' legs = $2 \\times 4 = 8$ legs.\n\nNow, add them all together:\n\n$$\n40 \\text{ (cows)} + 10 \\text{ (chickens)} + 8 \\text{ (horses)} = 58 \\text{ legs}\n$$\n\n✅ **Final Answer: 58 legs**.",
+                "refusal": null,
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "reasoning": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+        }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.32.0-tp4-4d660d54",
+    "usage": {
+        "prompt_tokens": 39,
+        "total_tokens": 253,
+        "completion_tokens": 214,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+            "reasoning_tokens": 0
+        }
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+}
