@@ -1,0 +1,11 @@
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": "A farmer has 10 cows, 5 chickens, and 2 horses. How many legs are there in total?"
+        }
+    ],
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_tokens": 4096
+}

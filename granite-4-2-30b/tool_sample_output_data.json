@@ -1,0 +1,52 @@
+{
+    "id": "chatcmpl-b41f6d80464c25dd",
+    "object": "chat.completion",
+    "created": 1794396047,
+    "model": "/opt/ml/model",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": null,
+                "refusal": null,
+                "annotations": null,
+                "audio": null,
+                "function_call": null,
+                "tool_calls": [
+                    {
+                        "id": "chatcmpl-tool-ab67fae84d78ae30",
+                        "type": "function",
+                        "function": {
+                            "name": "get_current_weather",
+                            "arguments": "{\"city\": \"Boston\"}"
+                        }
+                    }
+                ],
+                "reasoning": "Okay, the user is asking for the weather in Boston. I need to use the get_current_weather tool. The tool requires the city parameter, which is Boston here. I'll call the function with city set to \"Boston\". No other parameters are needed. Let me make sure the JSON is correctly formatted."
+            },
+            "logprobs": null,
+            "finish_reason": "tool_calls",
+            "stop_reason": null,
+            "token_ids": null,
+            "routed_experts": null
+        }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.32.0-tp4-4d660d54",
+    "usage": {
+        "prompt_tokens": 270,
+        "total_tokens": 368,
+        "completion_tokens": 98,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": {
+            "reasoning_tokens": 65
+        }
+    },
+    "prompt_logprobs": null,
+    "prompt_token_ids": null,
+    "prompt_text": null,
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+}
